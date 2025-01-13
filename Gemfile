@@ -28,6 +28,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # Local modules
 gem 'doctor_availability', path: 'modules/doctor_availability'
 
+gem 'packwerk'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

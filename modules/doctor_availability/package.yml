@@ -1,0 +1,6 @@
+# modules/doctor_availability/package.yml
+enforce_dependencies: true
+enforce_privacy: true
+public_path: public/
+dependencies:
+  - "."
