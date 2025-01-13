@@ -27,6 +27,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 # Local modules
 gem 'doctor_availability', path: 'modules/doctor_availability'
+gem 'appointment_booking', path: 'modules/appointment_booking'
 
 gem 'packwerk'
 

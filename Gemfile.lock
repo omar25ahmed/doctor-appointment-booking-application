@@ -1,4 +1,11 @@
 PATH
+  remote: modules/appointment_booking
+  specs:
+    appointment_booking (0.1.0)
+      doctor_availability
+      rails (~> 6.1.7)
+
+PATH
   remote: modules/doctor_availability
   specs:
     doctor_availability (0.1.0)
@@ -97,6 +104,7 @@ GEM
     faker (3.5.1)
       i18n (>= 1.8.11, < 2)
     ffi (1.17.1)
+    ffi (1.17.1-arm64-darwin)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.6)
@@ -228,6 +236,7 @@ PLATFORMS
   arm64-darwin-23
 
 DEPENDENCIES
+  appointment_booking!
   bootsnap (>= 1.4.4)
   byebug
   database_cleaner-active_record
@@ -247,4 +256,4 @@ RUBY VERSION
    ruby 3.0.6p216
 
 BUNDLED WITH
-   2.2.33
+   2.5.6

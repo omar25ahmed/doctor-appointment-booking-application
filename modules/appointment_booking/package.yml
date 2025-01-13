@@ -1,0 +1,6 @@
+enforce_dependencies: true
+enforce_privacy: true
+public_path: public/
+dependencies:
+  - "."
+  - "modules/doctor_availability"
