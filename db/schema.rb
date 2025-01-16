@@ -12,15 +12,16 @@
 
 ActiveRecord::Schema.define(version: 2025_01_12_090734) do
 
-  create_table "doctor_availability_slots", id: { type: :string, limit: 36 }, charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "doctor_availability_slots", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.datetime "time"
-    t.string "doctor_id"
+    t.integer "doctor_id"
     t.string "doctor_name"
+    t.decimal "cost", precision: 10
     t.boolean "is_reserved", default: false
-    t.decimal "cost", precision: 10, scale: 2
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["doctor_id"], name: "index_doctor_availability_slots_on_doctor_id"
+    t.index ["is_reserved"], name: "index_doctor_availability_slots_on_is_reserved"
     t.index ["time"], name: "index_doctor_availability_slots_on_time"
   end
 
